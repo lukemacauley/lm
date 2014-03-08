@@ -18,10 +18,10 @@ ready = ->
     nextText: ">" # Next directionNav text
     randomStart: false # Start on a random slide
 
-	#$("#masonry-container").imagesLoaded ->
-	$("#masonry-container").masonry
-    itemSelector: ".item"
-    isFitWidth: true
+	$("#masonry-container").imagesLoaded ->
+  	$("#masonry-container").masonry
+	    itemSelector: ".item"
+	    isFitWidth: true
 
   # COLLECTION PAGE
 
