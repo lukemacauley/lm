@@ -17,5 +17,6 @@
 //= require imagesloaded
 //= require verticalalign
 //= require touchwipe
+//= require customformelements
 //= require turbolinks
 //= require_tree .

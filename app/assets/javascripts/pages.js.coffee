@@ -18,10 +18,10 @@ ready = ->
     nextText: ">" # Next directionNav text
     randomStart: false # Start on a random slide
 
-	$("#masonry-container").imagesLoaded ->
-  	$("#masonry-container").masonry
-	    itemSelector: ".item"
-	    isFitWidth: true
+	#$("#masonry-container").imagesLoaded ->
+	$("#masonry-container").masonry
+    itemSelector: ".item"
+    isFitWidth: true
 
   # COLLECTION PAGE
 
@@ -39,7 +39,7 @@ ready = ->
     $(this).find("img").css("-webkit-filter" : "blur(4px)")
     $(this).find("a").css("opacity" : "1")
 
-  $(".item").mouseleave ->
+  $(".item").slice(1).mouseleave ->
     $(this).find("img").css("-webkit-filter" : "blur(0px)")
     $(this).find("a").css("opacity" : "0")
 

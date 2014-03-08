@@ -12,5 +12,6 @@
  *= require_tree .
  *= require nivoslider
  *= require themes/dark/dark
+ *= require customformelements
  *= require normalize
  */
