@@ -55,6 +55,8 @@ ready = ->
 
   $("#slider").find("a.xl-view").click ->
     $(".xl-container").fadeIn 500
+    y = $(window).scrollTop()
+    $(window).scrollTop y + 350
 
   $(".xl-container img").click ->
     $(".xl-container").fadeOut 500
