@@ -1,14 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Lm</title>
+  <title><%= full_title(yield(:title)) %></title>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <script src="//use.typekit.net/mpx7zxd.js"></script>
+	<script>try{Typekit.load();}catch(e){}</script>
+	<meta name="description" content="A capsule collection of men's luxury python accessories. Shop our products without the typical 3X retail markup.">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
   <%= csrf_meta_tags %>
 </head>
 <body>
-
-<%= yield %>
-
+	<%= render 'layouts/header' %>
+	<div id="loader-overlay"><div id="loader-spinner"></div></div>
+	<%= yield %>
+	<%= render 'layouts/footer' %>
+	<%= render 'layouts/mobile_nav' %>
 </body>
 </html>

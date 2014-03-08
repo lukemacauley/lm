@@ -17,7 +17,7 @@ Lm::Application.routes.draw do
   get "product" => "pages#product"
   get "returns" => "pages#returns"
   get "social" => "pages#social"
-  get "the-brand" => "pages#the_brand"
+  get "the-brand" => "pages#the_brand", as: 'thebrand'
 
   # Example of named route that can be invoked with purchase_url(id: product.id)
   #   get 'products/:id/purchase' => 'catalog#purchase', as: :purchase

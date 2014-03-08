@@ -12,5 +12,10 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require nivoslider
+//= require masonry
+//= require imagesloaded
+//= require verticalalign
+//= require touchwipe
 //= require turbolinks
 //= require_tree .
