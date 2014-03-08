@@ -1,0 +1,35 @@
+/*
+Skin Name: Nivo Slider Dark Theme
+Skin URI: http://nivo.dev7studios.com
+Description: A dark skin for the Nivo Slider.
+Version: 1.0
+Author: Gilbert Pellegrom
+Author URI: http://dev7studios.com
+Supports Thumbs: true
+*/
+
+.theme-dark .nivo-directionNav a {
+	display:block;
+	width:30px;
+	height:30px;
+	background: url(<%= asset_path 'arrows.png' %>) no-repeat;
+	text-indent:-9999px;
+	border:0;
+	top: auto;
+	bottom: -36px;
+	z-index: 11;
+}
+
+.theme-dark a.nivo-nextNav {
+	background-position:-16px 50%;
+	top: 45%;
+	right:0px;
+}
+.theme-dark a.nivo-nextNav::selection, .theme-dark a.nivo-prevNav::selection {
+	background-color: white;
+}
+.theme-dark a.nivo-prevNav {
+  background-position:11px 50%;
+  top: 45%;
+  left: 0;
+}

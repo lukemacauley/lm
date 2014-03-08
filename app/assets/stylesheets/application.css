@@ -11,5 +11,6 @@
  *= require_self
  *= require_tree .
  *= require nivoslider
+ *= require themes/dark/dark
  *= require normalize
  */
