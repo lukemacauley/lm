@@ -55,25 +55,31 @@
 		margin-top: 100px;
 		height: 100%;
 		background-color: #fff;
-		text-transform: uppercase;
 		z-index: 30;
 		.name {
+			font-family: "freight-sans-pro",sans-serif;
+			font-style: normal;
+			font-weight: 500;
 			position: relative;
 			top: 105px;
 			right: 0;
 			width: 60%;
 			text-align: left;
-			font-size: 22px;
-			font-weight: 600;
+			font-size: 24px;
+			line-height: 24px;
+			text-transform: uppercase;
 		}
 		.price {
+			font-family: "freight-sans-pro",sans-serif;
+			font-style: normal;
+			font-weight: 500;
 			position: relative;
 			top: 105px;
 			right: 0;
 			width: 60%;
 			text-align: left;
-			font-size: 16px;
-			font-weight: 600;
+			font-size: 24px;
+			line-height: 24px;
 		}
 		.description {
 			position: relative;
@@ -82,7 +88,11 @@
 			width: 80%;
 			margin-right: 10%;
 			text-align: left;
-			font-size: 16px;
+			font-size: 18px;
+			line-height: 1.5em;
+			font-family: "freight-sans-pro",serif;
+			font-style: normal;
+			font-weight: 400;
 		}
 		button.add-to-bag {
 			position: relative;
@@ -93,28 +103,29 @@
 			padding: 12px 60px;
 			background-color: #2b2b2b;
 			color: #fff;
-			border: none;
-			font-family: "proxima-nova",sans-serif;
-			font-weight: 600;
-			font-size: 18px;
+			border: 2px solid #2b2b2b;
+			font-family: "freight-sans-pro",sans-serif;
+			font-style: normal;
+			font-weight: 500;
+			font-size: 24px;
 			-webkit-transition-duration: 300ms;
 			-moz-transition-duration: 300ms;
 			-ms-transition-duration: 300ms;
 			-o-transition-duration: 300ms;
 			transition-duration: 300ms;
-			-webkit-box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.3);
-			-moz-box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.3);
-			box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.3);
+			//-webkit-box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.3);
+			//-moz-box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.3);
+			//box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.3);
 			text-transform: uppercase;
 			&:hover {
 				background-color: #FFF;
 				color: #2b2b2b;
 			}
-			&:active {
-				-webkit-box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.3);
-				-moz-box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.3);
-				box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.3);
-			}
+			//&:active {
+			//	-webkit-box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.3);
+			//	-moz-box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.3);
+			//	box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.3);
+			//}
 		}
 	}
 }
@@ -126,6 +137,9 @@
 	-moz-animation-duration: 1s;
 	-o-animation-duration: 1s;
 	animation-duration: 1s;
+	font-family: "freight-sans-pro",sans-serif;
+	font-style: normal;
+	font-weight: 400;
 	.item-container {
 		display: block;
 		margin: 0 auto;
@@ -183,12 +197,10 @@
 						color: #2b2b2b;
 						width: 420px;
 						margin: 0 40px;
-						font-size: 16px;
+						font-size: 18px;
 						text-align: center;
-						text-transform: uppercase;
 						z-index: 120;
 						-webkit-backface-visibility: hidden; 
-						font-weight: 600;
 					}
 				}
 			}
@@ -209,14 +221,13 @@
 					-webkit-margin-before: 0em;
 					-webkit-margin-after: 0em;
 					padding: 30px 60px;
-					font-size: 14px;
-					text-transform: uppercase;
+					font-size: 18px;
 					text-align: center;
 				}
 				.twitter {
-					margin-left: -50px;
+					margin-left: -35px;
 				}
-				.twitter, .instagram, .facebook {
+				.twitter, .instagram {
 					position: relative;
 					left: 50%;
 					height: 20px;
@@ -289,12 +300,15 @@
 					top: 50%;
 					color: #2b2b2b;
 					width: 100%;
-					font-size: 20px;
+					font-size: 24px;
+					line-height: 24px;
 					text-align: center;
 					text-transform: uppercase;
 					z-index: 120;
 					-webkit-backface-visibility: hidden; 
-					font-weight: 600;
+					font-family: "freight-sans-pro",sans-serif;
+					font-style: normal;
+					font-weight: 500;
 				}
 			}
 		}
@@ -361,9 +375,9 @@ html {
 }
 
 body {
-	font-family: "proxima-nova",sans-serif;
+	font-family: "freight-sans-pro",serif;
 	font-style: normal;
-	font-weight: 300;
+	font-weight: 400;
 	font-size: 1.6em; // 1.6em = 16px;
 	background-color: #FFF;
 	color: $primary-color;
@@ -387,13 +401,13 @@ a {
 	-ms-transition-duration: 300ms;
 	-o-transition-duration: 300ms;
 	transition-duration: 300ms;
-	&:hover {
-		color: $hover-color;
-	}
+	// &:hover {
+	// 	color: $hover-color;
+	// }
 }
 
 h1 {
-	font-weight: 300;
+	font-weight: 400;
 }
 
 .active {
@@ -405,18 +419,19 @@ h1 {
 
 .pages {
 	max-width: 550px;
-	margin: 40px auto 190px;
+	margin: 100px auto 190px;
 	-webkit-animation-duration: 1s;
 	-moz-animation-duration: 1s;
 	-o-animation-duration: 1s;
 	animation-duration: 1s;
 	p, a {
-		font-size: 16px;
+		font-size: 18px;
 		line-height: 1.5;
 		color: $primary-color;
-		font-weight: 300;
-		text-transform: uppercase;
-		text-align: justify;
+		font-weight: 400;
+		font-family: "freight-sans-pro",sans-serif;
+		font-style: normal;
+		font-weight: 400;
 		-webkit-margin-before: 2em;
 		-webkit-margin-after: 2em;
 		&:first-child {
@@ -433,10 +448,11 @@ h1 {
 	text-align: center;
 	list-style-type: none;
 	p, a {
-		font-size: 1.125em;
-		line-height: 1.5;
-		font-weight: 300;
-		text-transform: uppercase;
+		font-family: "freight-sans-pro",sans-serif;
+		font-style: normal;
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 1.5em;
 	}
 	p > a {
 		font-size: 1em;
@@ -472,7 +488,7 @@ h1 {
 			.close {
 				text-transform: uppercase;
 				color: #fff;
-				font-weight: 300;
+				font-weight: 400;
 				&:hover {
 					color: $hover-color;
 				}
@@ -505,7 +521,9 @@ h1 {
 				display: none;
 				text-transform: uppercase;
 				color: #fff;
-				font-weight: 300;
+				font-family: "freight-sans-pro",sans-serif;
+				font-style: normal;
+				font-weight: 500;
 				font-size: 14px;
 				padding: 10px;
 			}
@@ -529,22 +547,28 @@ header {
 	width: 100%;
 	height: 0;
 	text-align: right;
+	font-family: "freight-sans-pro",sans-serif;
+	font-style: normal;
+	font-weight: 500;
 	ul.right {
 		position: absolute;
 		top: 0;
 		right: 0;
 		list-style-type: none;
-		background-color: #fff;
-		-webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
-		-moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
-		box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+		background-color: #2b2b2b;
+		//-webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+		//-moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+		//box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
 		li {
 			padding: 14px 20px;
 			display: inline-block;
 			a {
 				text-transform: uppercase;
-				font-size: 14px;
-				font-weight: 300;
+				font-size: 16px;
+				color: #fff;
+				// &:hover {
+				// 	color: #838383;
+				// }
 			}
 			&:first-child {
 				padding-left: 40px;
@@ -564,10 +588,10 @@ header {
 	left: 0;
 	height: 80px;
 	width: 100%;
-	//border-top: 1px solid #ececec;
-	-webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
-	-moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
-	box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+	border-top: 2px solid #2b2b2b;
+	//-webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+	//-moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+	//box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
 	text-align: center;
 	ul {
 		margin-top: 26px;
@@ -585,8 +609,10 @@ header {
 				bottom: 6px;
 				padding-bottom: 0;
 				text-transform: uppercase;
-				font-size: 16px;
-				font-weight: 300;
+				font-size: 20px;
+				font-family: "freight-sans-pro",sans-serif;
+				font-style: normal;
+				font-weight: 500;
 			}
 			.logo {
 				height: 26px;
@@ -602,10 +628,7 @@ header {
 	left: 0;
 	z-index: 160;
 	height: 26px;
-	background-color: #fff;
-	-webkit-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.3);
-	-moz-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.3);
-	box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.3);
+	background-color: #2b2b2b;
 	text-align: center;
 	ul {
 		margin-top:2px;
@@ -613,10 +636,16 @@ header {
 			display: inline-block;
 			padding-left: 13px;
 			padding-right: 13px;
-			font-size: 12px;
 			text-transform: uppercase;
 			a {
-				font-weight: 300;
+				font-family: "freight-sans-pro",sans-serif;
+				font-style: normal;
+				font-weight: 500;
+				font-size: 12px;
+				color: #fff;
+				// &:hover {
+				// 	color: #838383;
+				// }
 			}
 		}
 	}
@@ -643,7 +672,7 @@ header {
 				padding: 20px 0;
 				text-transform: uppercase;
 				font-size: 18px;
-				font-weight: 300;
+				font-weight: 400;
 				&:first-child {
 					padding-left: 40px;
 					padding-right: 20px;
@@ -668,7 +697,7 @@ header {
 					margin-bottom: 80px;
 				}
 				.mobile_nav_links {
-					font-weight: 300;
+					font-weight: 400;
 					font-size: 18px;
 					padding: 20px;
 				}
@@ -858,7 +887,7 @@ header {
 			li {
 				font-size: 10px;
 				a {
-					font-weight: 300;
+					font-weight: 400;
 					color: $hover-color;
 					&:hover {
 						color: $hover-color;
@@ -908,7 +937,7 @@ header {
 					margin-bottom: 0px;
 				}
 				.mobile_nav_links {
-					font-weight: 300;
+					font-weight: 400;
 					font-size: 0.8em;
 					padding: 10px;
 				}
