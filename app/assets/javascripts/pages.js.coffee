@@ -36,18 +36,16 @@ ready = ->
   # SOCIAL PAGE
 
   $(".item").slice(1).mouseenter ->
-    $(this).find("img").css("-webkit-filter" : "blur(4px)")
     $(this).find("a").css("opacity" : "1")
 
   $(".item").slice(1).mouseleave ->
-    $(this).find("img").css("-webkit-filter" : "blur(0px)")
     $(this).find("a").css("opacity" : "0")
 
-  $(".twitter, .instagram, .facebook").mouseenter ->
-    $(this).css("-webkit-filter" : "blur(1px)")
+  # $(".twitter, .instagram, .facebook").mouseenter ->
+  #   $(this).css("-webkit-filter" : "blur(1px)")
 
-  $(".twitter, .instagram, .facebook").mouseleave ->
-    $(this).css("-webkit-filter" : "blur(0px)")
+  # $(".twitter, .instagram, .facebook").mouseleave ->
+  #   $(this).css("-webkit-filter" : "blur(0px)")
 
   $(".social-text, .product-text").flexVerticalCenter()
 
@@ -62,6 +60,8 @@ ready = ->
     $(".xl-container").fadeOut 500
 
   # GENERAL
+
+  document.getElementById("#masonry-container").style.removeAttribute "filter"
 
   $("[href]").each ->
   	$(this).addClass "active" if @href is window.location.href
