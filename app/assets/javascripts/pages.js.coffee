@@ -26,11 +26,11 @@ ready = ->
   # COLLECTION PAGE
 
   $(".product").mouseenter ->
-    $(this).find("img").css("-webkit-filter" : "blur(2px)")
+    # $(this).find("img").css("-webkit-filter" : "blur(2px)")
     $(this).find("a").css("opacity" : "1")
 
   $(".product").mouseleave ->
-    $(this).find("img").css("-webkit-filter" : "blur(0px)")
+    # $(this).find("img").css("-webkit-filter" : "blur(0px)")
     $(this).find("a").css("opacity" : "0")
 
   # SOCIAL PAGE
@@ -47,9 +47,13 @@ ready = ->
   # $(".twitter, .instagram, .facebook").mouseleave ->
   #   $(this).css("-webkit-filter" : "blur(0px)")
 
-  $(".social-text, .product-text").flexVerticalCenter()
+  $(".social-text, .product-text, #collection-container").flexVerticalCenter()
 
   # PRODUCT PAGE
+
+  # $(".xl-container").mouseenter ->
+  #   y = $(window).scrollTop()
+  #   $(window).scrollTop y + 350
 
   $("#slider").find("a.xl-view").click ->
     $(".xl-container").fadeIn 500

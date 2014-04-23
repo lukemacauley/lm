@@ -72,9 +72,9 @@
 			right: 0;
 			width: 60%;
 			text-align: left;
-			font-size: 18px;
-			line-height: 18px;
-			text-transform: uppercase;
+			font-size: 20px;
+			line-height: 20px;
+			// text-transform: uppercase;
 		}
 		.price {
 			font-family: "proxima-nova",sans-serif;
@@ -85,8 +85,8 @@
 			right: 0;
 			width: 60%;
 			text-align: left;
-			font-size: 18px;
-			line-height: 18px;
+			font-size: 20px;
+			line-height: 20px;
 		}
 		.description {
 			position: relative;
@@ -118,7 +118,7 @@
 			color: #fff;
 			border: 2px solid #2b2b2b;
 			font-weight: 600;
-			font-size: 18px;
+			font-size: 20px;
 			margin-bottom: 30px;
 			-webkit-transition-duration: 300ms;
 			-moz-transition-duration: 300ms;
@@ -131,7 +131,7 @@
 			//-webkit-box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.3);
 			//-moz-box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.3);
 			//box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.3);
-			text-transform: uppercase;
+			// text-transform: uppercase;
 			&:hover {
 				background-color: #fff;
 				color: #2b2b2b;
@@ -152,7 +152,7 @@
 }
 
 #masonry-container {
-	margin: 40px auto 137px;
+	margin: 50px auto 150px;
 	position: relative;
 	-webkit-animation-duration: 1s;
 	-moz-animation-duration: 1s;
@@ -169,7 +169,7 @@
 			top: 0;
 			left: 0;
 			width: 500px;
-			margin: 15px;
+			margin: 20px;
 			border: 2px solid transparent;
 			overflow: hidden;
 			.first-container {
@@ -202,8 +202,10 @@
 						width: 420px;
 						margin: 0 40px;
 						font-size: 16px;
+						line-height: 1.5em;
 						text-align: center;
 						z-index: 120;
+						// -webkit-backface-visibility: hidden;
 					}
 				}
 			}
@@ -244,20 +246,24 @@
 }
 
 #collection-container {
-	width: 1200px;
+	width: 1000px;
 	max-width: 100%;
 	height: 100%;
 	background-color: #fff;
-	//margin-bottom: 106px; Uncomment if you want to scroll the whole image.
+	margin-bottom: 100px; //Uncomment if you want to scroll the whole image.
 	margin-left: auto;
 	margin-right: auto;
 	position: relative;
-	margin-top: -106px;
+	// margin-top: -500px;
 	overflow: hidden;
 	-webkit-animation-duration: 1s;
 	-moz-animation-duration: 1s;
 	-o-animation-duration: 1s;
 	animation-duration: 1s;
+	text-align: center;
+	h2 {
+		margin-top: 50px;
+	}
 	.product {
 		position: relative;
 		max-width: 50%;
@@ -286,7 +292,7 @@
 				width: 100%;
 				top: 0;
 				left: 0;
-				background-color: rgba(255,255,255,0.5);
+				background-color: rgba(255,255,255,0.6);
 				-webkit-transition-duration: 500ms;
 				-moz-transition-duration: 500ms;
 				-ms-transition-duration: 500ms;
@@ -297,15 +303,11 @@
 					top: 50%;
 					color: #2b2b2b;
 					width: 100%;
-					font-size: 24px;
-					line-height: 24px;
+					font-size: 20px;
+					line-height: 20px;
+					font-weight: 600;
 					text-align: center;
-					text-transform: uppercase;
 					z-index: 120;
-					-webkit-backface-visibility: hidden; 
-					font-family: "proxima-nova",sans-serif;
-					font-style: normal;
-					font-weight: 500;
 				}
 			}
 		}
@@ -333,7 +335,7 @@
 	z-index: 9000;
 	width: 100%;
 	height: 100%;
-	background: #000;
+	background: #2b2b2b;
 	opacity: 0.6;
 	#loader-spinner {
 		position: absolute;
@@ -376,6 +378,7 @@ body {
 	font-style: normal;
 	font-weight: 400;
 	font-size: 1.6em; // 1.6em = 16px;
+	line-height: 1.5em;
 	background-color: #FFF;
 	color: $primary-color;
 	-webkit-font-smoothing: subpixel-antialiased;
@@ -404,8 +407,10 @@ a {
 	// }
 }
 
-h1 {
-	font-weight: 400;
+h2 {
+	font-size: 20px;
+	font-weight: 600;
+	// text-align: center;
 }
 
 .active {
@@ -417,7 +422,7 @@ h1 {
 
 .pages {
 	max-width: 550px;
-	margin: 100px auto 190px;
+	margin: 50px auto 150px;
 	-webkit-animation-duration: 1s;
 	-moz-animation-duration: 1s;
 	-o-animation-duration: 1s;
@@ -426,10 +431,8 @@ h1 {
 		font-size: 16px;
 		line-height: 1.5;
 		color: $primary-color;
-		-webkit-margin-before: 2em;
-		-webkit-margin-after: 2em;
-		// text-transform: uppercase;
-		// color: #888;
+		-webkit-margin-before: 30px;
+		-webkit-margin-after: 30px;
 		letter-spacing: 1px;
 		&:first-child {
 			-webkit-margin-before: 0;
@@ -441,12 +444,13 @@ h1 {
 }
 
 .contact {
-	margin: 100px auto 190px;
+	margin: 15% auto 150px;
 	text-align: center;
 	list-style-type: none;
 	p, a {
-		font-size: 16px;
-		line-height: 1.5em;
+		font-size: 20px;
+		font-weight: 600;
+		line-height: 20px;
 		// text-transform: uppercase;
 	}
 	p > a {
@@ -460,10 +464,10 @@ h1 {
 .coin {
 	display: inline;
 }
-.coin:hover .tails {
+.coin:hover .tails, .coin1:hover .tails {
     display: inline;
 }
-.coin:hover .heads {
+.coin:hover .heads, .coin1:hover .heads {
     display: none;
 }
 
@@ -481,7 +485,7 @@ h1 {
 			text-align: center;
 			padding-top: 20px;
 			.close {
-				text-transform: uppercase;
+				// text-transform: uppercase;
 				color: #fff;
 				font-weight: 400;
 				&:hover {
@@ -514,7 +518,7 @@ h1 {
 			}
 			.mobile_nav_links {
 				display: none;
-				text-transform: uppercase;
+				// text-transform: uppercase;
 				color: #fff;
 				font-weight: 500;
 				font-size: 14px;
@@ -538,28 +542,22 @@ header {
 	top: -2px;
 	right: -2px;
 	width: 100%;
-	height: 26px;
 	text-align: right;
 	ul.right {
 		position: absolute;
 		top: 0;
 		right: 0;
 		list-style-type: none;
-		background-color: #fff;
 		border: 2px solid #2b2b2b;
-		//-webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
-		//-moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
-		//box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+		background-color: #FFF;
 		li {
-			padding: 10px 11px;
+			padding: 11px 11px;
 			display: inline-block;
 			a {
-				text-transform: uppercase;
-				font-size: 13px;
-				line-height: 26px;
-				color: #2b2b2b;
+				font-size: 18px;
 				font-weight: 600;
-				font-family: "proxima-nova";
+				position: relative;
+				top: 1px;
 			}
 			&:first-child {
 				padding-left: 30px;
@@ -597,10 +595,9 @@ header {
 			}
 			.footer_links {
 				position: relative;
-				bottom: 6px;
+				bottom: 5px;
 				padding-bottom: 0;
-				text-transform: uppercase;
-				font-size: 18px;
+				font-size: 20px;
 				font-family: "proxima-nova",sans-serif;
 				font-style: normal;
 				font-weight: 600;
@@ -622,18 +619,17 @@ header {
 	background-color: #2b2b2b;
 	text-align: center;
 	ul {
-		margin-top:2px;
 		li {
 			display: inline-block;
 			padding-left: 13px;
 			padding-right: 13px;
-			//text-transform: uppercase;
+			line-height: 26px;
 			a {
 				font-family: "proxima-nova",sans-serif;
 				font-style: normal;
 				font-weight: 300;
-				font-size: 11px;
-				text-transform: uppercase;
+				font-size: 12px;
+				// text-transform: uppercase;
 				color: #fff;
 				// &:hover {
 				// 	color: #838383;
@@ -662,7 +658,7 @@ header {
 			}
 			a {
 				padding: 20px 0;
-				text-transform: uppercase;
+				// text-transform: uppercase;
 				font-size: 18px;
 				font-weight: 400;
 				&:first-child {

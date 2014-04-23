@@ -6,7 +6,7 @@ Lm::Application.routes.draw do
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
 
-  root "pages#product"
+  root "pages#collection"
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
@@ -14,7 +14,7 @@ Lm::Application.routes.draw do
   get "contact" => "pages#contact"
   get "delivery" => "pages#delivery"
   get "legal" => "pages#legal"
-  get "collection" => "pages#collection"
+  get "product" => "pages#product"
   get "product" => "pages#product"
   get "returns" => "pages#returns"
   get "social" => "pages#social"
